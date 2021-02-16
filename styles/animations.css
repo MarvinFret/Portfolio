@@ -1,0 +1,5 @@
+@keyframes bean {
+    50% {
+      transform: translateY(-20px);
+    }
+  }
