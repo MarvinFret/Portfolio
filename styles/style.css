@@ -106,10 +106,15 @@ justify-content: center;
   margin-bottom: 0;
 }
 
-.showcase-content__pargraph {
+.showcase-content__paragraph {
   margin-top: 0;
 }
 
 .showcase-content__img {
   width: 50%;
+}
+
+.contact-section__heading{
+  font-size: 3.6rem;
+  font-weight: 500;
 }
