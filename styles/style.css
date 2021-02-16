@@ -74,6 +74,11 @@ p {
   width: 100%;
 }
 
+.projects-section__phone{
+position: absolute;
+left: 0;
+}
+
 .project_section__showcase {
   display: flex;
   align-items: center;
@@ -84,13 +89,11 @@ p {
 .project-section__left-arrow {
   position: absolute;
   left: 0;
-  transform: translateX(-75px);
 }
 
 .project-section__right-arrow {
   position: absolute;
   right: 0;
-  transform: translateX(75px);
 }
 
 .project_section__showcase-content {

@@ -1,0 +1,30 @@
+/* Rotations */
+
+.rotate-clockwise-15-degree{
+    transform:rotate(15deg);
+}
+.rotate-clockwise-30-degree{
+    transform:rotate(30deg);
+}
+
+.rotate-clockwise-45-degree{
+    transform:rotate(45deg);
+}
+
+.rotate-clockwise-90-degree{
+    transform:rotate(90deg);
+}
+
+.rotate-clockwise-135-degree{
+    transform:rotate(135deg);
+}
+
+/*  Translations */
+
+.translate-x-minus-75-px{
+    transform: translateX(-75px);
+}
+
+.translate-x-plus-75-px{
+    transform: translateX(75px);
+}
