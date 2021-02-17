@@ -14,7 +14,6 @@ header {
   position: absolute;
   width: 33.3%;
   font-size: 3rem;
-
 }
 
 .text-wrapper__name {
@@ -25,19 +24,18 @@ header {
 .text-wrapper__heading {
   font-size: 7rem;
   font-weight: 400;
-    /* animation: heading 2s 1; */
 }
 
-.bicycle{
+.bicycle {
   position: absolute;
   right: 0;
   top: 50px;
   filter: var(--main-drop-shadow);
 }
 
-.radio{
+.radio {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: 0;
   transform: translateX(-575px);
   filter: var(--main-drop-shadow);
@@ -58,6 +56,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 400ms;
 }
 
 section {
@@ -93,23 +92,17 @@ p {
   width: 100%;
 }
 
-.projects-section__phones{
-position: absolute;
-left: -10px;
+.projects-section__phones {
+  position: absolute;
+  left: -10px;
+  width: 33%;
 }
-.projects-section__phone{
-position: absolute;
-}
-.projects-section__phone-1{
-position: absolute;
-transform:rotate(15deg);
-}
-.projects-section__phone-2{
-position: absolute;
-transform:rotate(30deg);
+.projects-section__phone {
+  position: absolute;
+  width: 35%;
 }
 
-.project_section__showcase {
+.project_sections__showcase {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,10 +119,10 @@ transform:rotate(30deg);
   right: 0;
 }
 
-.showcase-content__main-content{
+.showcase-content__main-content {
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .showcase-content__heading {
   font-size: 1.8rem;
@@ -143,9 +136,17 @@ justify-content: center;
 
 .showcase-content__img {
   width: 100%;
+  transition: 500ms;
+  cursor: pointer;
+  box-shadow: none;
 }
 
-.contact-section__heading{
+.showcase-content__img:hover {
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0 rgba(27, 67, 86, 0.65);
+}
+
+.contact-section__heading {
   font-size: 3.6rem;
   font-weight: 500;
   text-align: center;

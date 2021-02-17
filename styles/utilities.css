@@ -11,6 +11,8 @@ html, body{
     font-family: 'Mukta', Helvetica, sans serif;
     color: #1B4356;
     overflow-x: hidden;
+    -webkit-transition: all 400ms; /* Safari */
+    transition: all 400ms;
 }
 
 ul, ol{

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/transformations-and-filters.css" />
     <link rel="stylesheet" href="styles/modal.css" />
     <link rel="stylesheet" href="styles/style.css" />
+
     <title>Marvin Fretter - Design and Development</title>
   </head>
 
@@ -25,17 +26,18 @@
         src="img/rad.png"
         alt="A bicycle, because i like to ride it."
       />
+      <img
+        class="coffe-bean"
+        src="img/cropped-bean.png"
+        alt="A floating coffe bean because i like coffe a lot."
+      />
       <div class="hero__text-wrapper">
         <span class="text-wrapper__name">Marvin Fretter</span>
         <h1 class="text-wrapper__heading">Design & <br />Development</h1>
       </div>
     </header>
     <main>
-      <img
-        class="coffe-bean"
-        src="img/cropped-bean.png"
-        alt="A floating coffe bean because i like coffe a lot."
-      />
+      
       <section class="about-section">
         <h2 class="about-section__heading">About Me</h2>
         <p class="about-section__paragraph">
@@ -101,7 +103,7 @@
           deleniti perferendis eos explicabo facere at odit eaque atque,
           obcaecati hic. Suscipit aliquid quia nihil animi. Placeat, eos!
         </p>
-        <div class="project_section__showcase">
+        <div class="projects_section__showcase">
           <svg class="project-section__left-arrow translate-x-minus-75-px" height="40" width="75">
             <line
               x1="25"
@@ -167,47 +169,21 @@
         </h2>
       </section> 
 
+
+    </main>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <img src="img/shopme-3screens.jpg" alt="">
+    <img class="modal-img" src="img/shopme-3screens.jpg" alt="">
     <span class="close">&times;</span>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
   </div>
 
 </div>
-    </main>
 
 
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementsByClassName("showcase-content__img")[0];
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+<script src="scripts/modal.js"></script>
   </body>
 </html>

@@ -91,6 +91,9 @@
 /* FILTERS */
 
 /*  Blur */
+.blur-0{
+  filter: blur(0);
+}
 .blur-1{
   filter: blur(1px);
 }
@@ -105,4 +108,16 @@
 
 .blur-4{
   filter: blur(4px);
+}
+
+.increase-opacity{
+  opacity: 1;
+}
+
+.scale-down{
+  transform: scale(0.75);
+}
+
+.scale-up{
+  transform: scale(1.25);
 }
