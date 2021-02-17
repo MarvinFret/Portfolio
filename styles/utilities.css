@@ -1,3 +1,8 @@
+::root{
+
+--main-drop-shadow: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.75));
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -5,6 +10,7 @@ html, body{
     font-size: 10px;
     font-family: 'Mukta', Helvetica, sans serif;
     color: #1B4356;
+    overflow-x: hidden;
 }
 
 ul, ol{

@@ -3,3 +3,9 @@
       transform: translateY(-20px);
     }
   }
+
+  @keyframes heading {
+    100% {
+      font-size: 7rem;
+    }
+  }

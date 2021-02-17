@@ -3,6 +3,11 @@
 .rotate-origin-bottom-left {
   transform-origin: bottom left;
 }
+
+.rotate-origin-bottom-right {
+  transform-origin: bottom right;
+}
+
 .rotate-clockwise-15-degree {
   transform: rotate(15deg);
 }
@@ -24,6 +29,32 @@
 
 .rotate-clockwise-135-degree {
   transform: rotate(135deg);
+}
+.rotate-counter-clockwise-15-degree {
+  transform: rotate(-15deg);
+}
+.rotate-counter-clockwise-30-degree {
+  transform: rotate(-30deg);
+}
+
+.rotate-counter-clockwise-45-degree {
+  transform: rotate(-45deg);
+}
+
+.rotate-counter-clockwise-60-degree {
+  transform: rotate(-60deg);
+}
+
+.rotate-counter-clockwise-90-degree {
+  transform: rotate(-90deg);
+}
+
+.rotate-counter-clockwise-135-degree {
+  transform: rotate(-135deg);
+}
+
+.rotate-counter-clockwise-180-degree {
+  transform: rotate(-180deg);
 }
 
 /*  Translations */
