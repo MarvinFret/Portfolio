@@ -12,6 +12,8 @@ html, body{
     color: #1B4356;
     overflow-x: hidden;
     -webkit-transition: all 400ms; /* Safari */
+    -moz-transition: all 400ms; /* mozilla */
+    -o-transition: all 400ms; /* opera */
     transition: all 400ms;
 }
 

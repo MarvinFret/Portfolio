@@ -1,5 +1,5 @@
 // Get the modal
-let modal = document.getElementById("myModal");
+let modal = document.getElementsByClassName("modal")[0];
 
 // Get the button that opens the modal
 let btn = document.getElementsByClassName("showcase-content__img")[0];

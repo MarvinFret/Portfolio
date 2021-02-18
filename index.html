@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/transformations-and-filters.css" />
     <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Marvin Fretter - Design and Development</title>
@@ -104,20 +105,20 @@
           obcaecati hic. Suscipit aliquid quia nihil animi. Placeat, eos!
         </p>
         <div class="projects_section__showcase">
-          <svg class="project-section__left-arrow translate-x-minus-75-px" height="40" width="75">
+          <svg class="projects-section__arrow --left-arrow translate-x-minus-75-px" height="50" width="40" onclick="plusSlides(-1)">
             <line
-              x1="25"
-              y1="5"
-              x2="5"
-              y2="20"
+              x1="30"
+              y1="10"
+              x2="10"
+              y2="25"
               stroke-linecap="round"
               style="stroke: #1B4356; stroke-width: 5"
             />
             <line
-              x1="25"
-              y1="35"
-              x2="5"
-              y2="20"
+              x1="30"
+              y1="40"
+              x2="10"
+              y2="25"
               stroke-linecap="round"
               style="stroke: #1B4356; stroke-width: 5"
             />
@@ -128,28 +129,41 @@
             <div class="showcase-content__main-content">
              
            
-            
+              <div class="mySlides fade">
               <img class="showcase-content__img"
                 src="img/shopme-3screens.jpg"
                 alt="An image of a mockup showing 3 screens of a mobile app."
               >
-           
+              </div>
+              <div class="mySlides fade">
+                <img src="img/Mockup-collection.png" style="width:100%">
+                <div class="text">Caption Text</div>
+              </div>
+
+
           </div>
+          <!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
           </div>
-          <svg class="project-section__right-arrow translate-x-plus-75-px" height="40" width="75">
+          <svg class="projects-section__arrow --right-arrow translate-x-plus-75-px" height="50" width="40" onclick="plusSlides(1)">
             <line
-              x1="50"
-              y1="5"
-              x2="70"
-              y2="20"
+              x1="10"
+              y1="10"
+              x2="30"
+              y2="25"
               stroke-linecap="round"
               style="stroke: #1B4356; stroke-width: 5"
             />
             <line
-              x1="50"
-              y1="35"
-              x2="70"
-              y2="20"
+              x1="10"
+              y1="40"
+              x2="30"
+              y2="25"
               stroke-linecap="round"
               style="stroke: #1B4356; stroke-width: 5"
             />
@@ -172,7 +186,7 @@
 
     </main>
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
@@ -184,6 +198,41 @@
 </div>
 
 
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img/Mockup-collection.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/Paper.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/portrait.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
 <script src="scripts/modal.js"></script>
+<script src="scripts/slider.js"></script>
   </body>
 </html>

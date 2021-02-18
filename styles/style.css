@@ -47,7 +47,7 @@ header {
   bottom: 50px;
   animation: bean 3s infinite;
   transform: translateY(50px);
-  filter: var(--main-drop-shadow);
+  filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.75));
 }
 
 main {
@@ -102,20 +102,28 @@ p {
   width: 35%;
 }
 
-.project_sections__showcase {
+.projects_section__showcase {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.project-section__left-arrow {
-  position: absolute;
+.projects-section__arrow{
+position: absolute;
+cursor: pointer;
+}
+
+.projects-section__arrow:hover{
+background-color: #a1bbc780;
+border-radius: 4px;
+}
+
+.--left-arrow {
   left: 0;
 }
 
-.project-section__right-arrow {
-  position: absolute;
+.--right-arrow {
   right: 0;
 }
 
@@ -144,6 +152,7 @@ p {
 .showcase-content__img:hover {
   border-radius: 4px;
   box-shadow: 0 0 20px 0 rgba(27, 67, 86, 0.65);
+  transform: scale(1.02);
 }
 
 .contact-section__heading {
