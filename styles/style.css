@@ -94,15 +94,21 @@ p {
   position: relative;
 }
 
+.about-section {
+  margin-top: -35px;
+}
+ 
 .about-section__heading {
   font-size: 3.6rem;
   font-weight: 500;
+  margin-top: 0;
 }
 
 .about-section__img {
-  width: 300px;
+  width: 45%;
   float: left;
-  margin-right: 15px;
+  margin-right: 25px;
+  margin-left: -50px;
 }
 
 .projects-section__heading {
