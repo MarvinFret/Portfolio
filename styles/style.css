@@ -4,11 +4,29 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #a1bbc7;
-  background-image: url(../img/illu/iPad_png.png), url(../img/illu/Laptop_png.png);
+  /* background-image: url(../img/illu/iPad_png.png), url(../img/illu/Laptop_png.png);
   background-repeat: no-repeat;
   background-position: left, right;
-  background-size: 50%, 50%;
+  background-size: 50%, 50%; */
   height: 660px;
+}
+
+.hero__img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-wrapper__left-img {
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+.img-wrapper__right-img {
+  width: 50%;
+  right: 0;
+  top: 0;
 }
 
 .hero__text-wrapper {
@@ -47,7 +65,7 @@ header {
   position: absolute;
   width: 20%;
   right: 50px;
-  bottom: 15%;
+  top: 500px;
   z-index: 1;
   animation: bean 3s infinite;
   transform: translateY(50px);

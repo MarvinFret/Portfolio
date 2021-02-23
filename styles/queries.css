@@ -1,5 +1,8 @@
-@media only screen and (max-width: 1000px) {
-    section {
-      width: 50%;
-    }
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 550px;
   }
+  section {
+    width: 50%;
+  }
+}
