@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="styles/utilities.css" />
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/transformations-and-filters.css" />
-    <link rel="stylesheet" href="styles/modal.css" />
-    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="stylesheet" href="styles/modal.css" async/>
+    <link rel="stylesheet" href="styles/slider.css"async />
+    <link rel="stylesheet" href="styles/contact-form.css"async async/>
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Marvin Fretter - Design and Development</title>
@@ -79,15 +80,15 @@
       <section class="projects-section">
         <img
           class="projects-section__header-img"
-          src="img/mockup-collection.png"
+          src="img/Mockup-collection.png"
           alt="Me, working on a project with my laptop."
           loading="lazy"
         />
         <div class="projects-section__phones translate-x-minus-50-px">
-        <img class="projects-section__phone rotate-clockwise-15-degree rotate-origin-bottom-left blur-3" src="img/Smartphone.png"></img>
-        <img class="projects-section__phone rotate-clockwise-30-degree rotate-origin-bottom-left blur-2" src="img/Smartphone.png"></img>
-        <img class="projects-section__phone rotate-clockwise-45-degree rotate-origin-bottom-left blur-1" src="img/Smartphone.png"></img>
-        <img class="projects-section__phone rotate-clockwise-60-degree rotate-origin-bottom-left " src="img/Smartphone.png"></img>
+        <img class="projects-section__phone rotate-clockwise-15-degree rotate-origin-bottom-left blur-3" src="img/Smartphone.png"  loading="lazy"></img>
+        <img class="projects-section__phone rotate-clockwise-30-degree rotate-origin-bottom-left blur-2" src="img/Smartphone.png"  loading="lazy"></img>
+        <img class="projects-section__phone rotate-clockwise-45-degree rotate-origin-bottom-left blur-1" src="img/Smartphone.png"  loading="lazy"></img>
+        <img class="projects-section__phone rotate-clockwise-60-degree rotate-origin-bottom-left " src="img/Smartphone.png"  loading="lazy"></img>
         </div>
         <h2 class="projects-section__heading">Projects</h2>
         <p class="projects-section__paragraph">
@@ -133,14 +134,13 @@
               <img class="showcase-content__img"
                 src="img/wap-cropped.png"
                 alt="An image of a mockup showing a phone with an apped opened on a table."
-                loading="lazy"
+              
               >
               </div>
-              <div class="main-content__slide fade" onclick="openModal('img/Mockup-collection.png')">
+              <div class="main-content__slide fade" onclick="openModal('img/deep-mock.png')">
                 <img class="showcase-content__img"
-                src="img/Mockup-collection.png" 
+                src="img/deep-mock.png" 
                 alt="A mockup of some of the projects i have done. The mockups float above a ocean blue canvas in an angle of 45 degrees."
-                loading="lazy"
                 >
               </div>
 
@@ -200,8 +200,9 @@
 
 </div>
 
-<script src="scripts/modal.js"></script>
-<script src="scripts/slider.js"></script>
+<script src="scripts/modal.js" async></script>
+<script src="scripts/slider.js" async></script>
+<script src="scripts/contact-form.js" async></script>
   </body>
   <footer><span>All Images from <a href="https://www.unsplash.com" target="blank">Unsplash</a> </span></footer>
 </html>

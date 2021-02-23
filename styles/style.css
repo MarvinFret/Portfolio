@@ -47,7 +47,7 @@ header {
   bottom: 50px;
   animation: bean 3s infinite;
   transform: translateY(50px);
-  filter: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(10px 40px 30px rgba(26, 16, 12, 0.75));
 }
 
 main {
@@ -56,7 +56,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 400ms;
 }
 
 section {
@@ -109,14 +108,14 @@ p {
   position: relative;
 }
 
-.projects-section__arrow{
-position: absolute;
-cursor: pointer;
+.projects-section__arrow {
+  position: absolute;
+  cursor: pointer;
 }
 
-.projects-section__arrow:hover{
-background-color: #a1bbc780;
-border-radius: 4px;
+.projects-section__arrow:hover {
+  background-color: #a1bbc780;
+  border-radius: 4px;
 }
 
 .--left-arrow {
