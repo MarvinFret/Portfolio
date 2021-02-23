@@ -19,7 +19,6 @@
     <title>Marvin Fretter - Design and Development</title>
   </head>
 
-
   <body>
     <header>
       <img
@@ -57,11 +56,6 @@
           enim voluptates excepturi animi molestiae consequuntur suscipit
           eligendi dicta itaque, hic iste reprehenderit. Voluptatum, molestias
           nisi?
-          <!-- <img
-          class="radio translate-x-minus-75-px""
-          src="img/radio.png"
-          alt="A radio, because i'm a musican, too."
-        /> -->
         </p>
         <p class="about-section__paragraph">
           <img
@@ -128,25 +122,34 @@
             <h3 class="showcase-content__heading">shopme</h3>
             <div class="showcase-content__main-content">
              
-           
-              <div class="mySlides fade">
+              <div class="main-content__slide fade" onclick="openModal('img/shopme-3screens.jpg')">
               <img class="showcase-content__img"
                 src="img/shopme-3screens.jpg"
-                alt="An image of a mockup showing 3 screens of a mobile app."
+                alt="An image of a mockup showing 3 screens of a mobile app that i have developed. It is called shopme."
+                loading="lazy"
               >
               </div>
-              <div class="mySlides fade">
-                <img src="img/Mockup-collection.png" style="width:100%">
-                <div class="text">Caption Text</div>
+              <div class="main-content__slide fade" onclick="openModal('img/wap-cropped.png')">
+              <img class="showcase-content__img"
+                src="img/wap-cropped.png"
+                alt="An image of a mockup showing a phone with an apped opened on a table."
+                loading="lazy"
+              >
               </div>
-
+              <div class="main-content__slide fade" onclick="openModal('img/Mockup-collection.png')">
+                <img class="showcase-content__img"
+                src="img/Mockup-collection.png" 
+                alt="A mockup of some of the projects i have done. The mockups float above a ocean blue canvas in an angle of 45 degrees."
+                loading="lazy"
+                >
+              </div>
 
           </div>
           <!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+<div class="dot-wrapper" >
+  <span class="dot-wrapper__dot" onclick="currentSlide(1)"></span>
+  <span class="dot-wrapper__dot" onclick="currentSlide(2)"></span>
+  <span class="dot-wrapper__dot" onclick="currentSlide(3)"></span>
 </div>
 
           </div>
@@ -190,49 +193,15 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <img class="modal-img" src="img/shopme-3screens.jpg" alt="">
-    <span class="close">&times;</span>
+    <img class="modal-content__modal-img" src="" alt="">
+    <span class="close" onclick="closeModal()">&times;</span>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
   </div>
 
 </div>
 
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="img/Mockup-collection.png" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Paper.png" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/portrait.png" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-
-
 <script src="scripts/modal.js"></script>
 <script src="scripts/slider.js"></script>
   </body>
+  <footer><span>All Images from <a href="https://www.unsplash.com" target="blank">Unsplash</a> </span></footer>
 </html>

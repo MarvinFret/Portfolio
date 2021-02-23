@@ -7,7 +7,7 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.main-content__slide {
   display: none;
 }
 
@@ -50,7 +50,12 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot-wrapper{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot-wrapper__dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -62,7 +67,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #585858;
 }
 
 /* Fading animation */
