@@ -4,9 +4,10 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #a1bbc7;
-  background-image: url(../img/head-left2.jpg), url(../img/head-right2.jpg);
+  background-image: url(../img/illu/iPad_png.png), url(../img/illu/Laptop_png.png);
   background-repeat: no-repeat;
   background-position: left, right;
+  background-size: 50%, 50%;
   height: 660px;
 }
 
@@ -27,7 +28,8 @@ header {
 }
 
 .bicycle {
-  position: absolute;
+  position: fixed;
+  width: 150px;
   right: 0;
   top: 50px;
   filter: var(--main-drop-shadow);
@@ -43,19 +45,23 @@ header {
 
 .coffe-bean {
   position: absolute;
+  width: 20%;
   right: 50px;
-  bottom: 50px;
+  bottom: 15%;
+  z-index: 1;
   animation: bean 3s infinite;
   transform: translateY(50px);
   filter: drop-shadow(10px 40px 30px rgba(26, 16, 12, 0.75));
 }
 
 main {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 section {

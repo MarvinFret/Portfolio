@@ -14,19 +14,21 @@
     <link rel="stylesheet" href="styles/transformations-and-filters.css" />
     <link rel="stylesheet" href="styles/modal.css" async/>
     <link rel="stylesheet" href="styles/slider.css"async />
-    <link rel="stylesheet" href="styles/contact-form.css"async async/>
+    <link rel="stylesheet" href="styles/contact-form.css" async/>
+    
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
 
     <title>Marvin Fretter - Design and Development</title>
   </head>
 
   <body>
     <header>
-      <img
+      <!-- <img
         class="bicycle translate-x-plus-50-px"
         src="img/rad.png"
         alt="A bicycle, because i like to ride it."
-      />
+      /> -->
       <img
         class="coffe-bean"
         src="img/cropped-bean.png"
@@ -123,21 +125,21 @@
             <h3 class="showcase-content__heading">shopme</h3>
             <div class="showcase-content__main-content">
              
-              <div class="main-content__slide fade" onclick="openModal('img/shopme-3screens.jpg')">
+              <div class="main-content__slide fade" onclick="openModal('shopme','img/shopme-3screens.jpg')">
               <img class="showcase-content__img"
                 src="img/shopme-3screens.jpg"
                 alt="An image of a mockup showing 3 screens of a mobile app that i have developed. It is called shopme."
                 loading="lazy"
               >
               </div>
-              <div class="main-content__slide fade" onclick="openModal('img/wap-cropped.png')">
+              <div class="main-content__slide fade" onclick="openModal('wap', 'img/wap-cropped.png')">
               <img class="showcase-content__img"
                 src="img/wap-cropped.png"
                 alt="An image of a mockup showing a phone with an apped opened on a table."
               
               >
               </div>
-              <div class="main-content__slide fade" onclick="openModal('img/deep-mock.png')">
+              <div class="main-content__slide fade" onclick="openModal('deep', 'img/deep-mock.png')">
                 <img class="showcase-content__img"
                 src="img/deep-mock.png" 
                 alt="A mockup of some of the projects i have done. The mockups float above a ocean blue canvas in an angle of 45 degrees."
@@ -182,20 +184,44 @@
       </section>
       <section class="contact-section">
         <h2 class="contact-section__heading">
-          Want to hire me? <br> Click here to get in touch!
+          Want to get in touch? Please, feel free to contact me!
         </h2>
-      </section> 
+      
 
-
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+    </section> 
     </main>
 <!-- The Modal -->
 <div class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
+    
     <img class="modal-content__modal-img" src="" alt="">
     <span class="close" onclick="closeModal()">&times;</span>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
+    <p class="modal-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
   </div>
 
 </div>

@@ -8,9 +8,10 @@ let modal = document.getElementsByClassName("modal")[0];
 let main = document.getElementsByTagName("main")[0];
 
 // When the user clicks the img, open the modal 
-function openModal(imgSrc){
-  let modalImg = document.getElementsByClassName("modal-content__modal-img")[0];
+function openModal(project, imgSrc){
+  const modalImg = document.getElementsByClassName("modal-content__modal-img")[0];
   modalImg.src = imgSrc;
+  setText(project);
   modal.style.visibility = "visible";
   modal.style.opacity = 1;
   modal.style.width = "100%";
@@ -26,6 +27,24 @@ function closeModal() {
   modal.style.opacity = 0;
   modal.style.width = "33%";
   modal.style.height = "25%";
+}
+
+function setText(project){
+  const textEl = document.getElementsByClassName("modal-content__text")[0];
+  if(project === 'shopme'){
+    textEl.innerHTML = "This is shopme. I've designed and coded this app to help people out when they are struggling with their groceries. It was fun. To be continued!";
+  }
+  if(project === 'wap'){
+    textEl.innerHTML = "This is Wap. I've designed and coded this app to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. Enjoy!";
+  }
+  if(project === 'deep'){
+    textEl.innerHTML = "This is deep. I've designed this webshop for bass enthusiast. The goal is to put only a few, high-class and carefully selected basses in the spotlight. The shop is supposed to be less loaded then average instrument retailers to help the user focus on what matters: a good bass.";
+  }
+  if(project === 'mail'){
+    const form = document.getElementsByTagName("form");
+    console.log(Array.from(form));
+    textEl.innerHTML = form;
+  }
 }
 
 // When the user clicks anywhere outside of the modal, close it
