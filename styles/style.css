@@ -12,10 +12,12 @@ header {
 }
 
 .hero__img-wrapper {
-  position: relative;
+  position: fixed;
+  top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: none;
 }
 
 .img-wrapper__left-img {
@@ -97,7 +99,7 @@ p {
 .about-section {
   margin-top: -35px;
 }
- 
+
 .about-section__heading {
   font-size: 3.6rem;
   font-weight: 500;

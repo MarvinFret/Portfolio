@@ -10,7 +10,6 @@ html, body{
     font-size: 10px;
     font-family: 'Mukta', Helvetica, sans serif;
     color: #1B4356;
-    overflow-x: hidden;
     -webkit-transition: all 400ms; /* Safari */
     -moz-transition: all 400ms; /* mozilla */
     -o-transition: all 400ms; /* opera */
