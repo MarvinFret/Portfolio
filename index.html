@@ -23,6 +23,7 @@
   </head>
 
   <body>
+
     <header>
       <!-- <img
         class="bicycle translate-x-plus-50-px"
@@ -30,8 +31,8 @@
         alt="A bicycle, because i like to ride it."
       /> -->
           <div class="hero__img-wrapper">
-      <img src="img/illu/iPad_png.png" alt="" class="hero-img img-wrapper__left-img" ></img>
-      <img src="img/illu/Laptop_png.png" alt="" class="hero-img img-wrapper__right-img">
+      <img src="img/illu/iPad_png.png" alt="" class="img-wrapper__left-img" ></img>
+      <img src="img/illu/Laptop_png2.png" alt="" class="img-wrapper__right-img">
     </div>
       <div class="hero__text-wrapper">
         <span class="text-wrapper__name">Marvin Fretter</span>
@@ -45,6 +46,7 @@
     </header>
 
     <main>
+      <!-- <div class="head-row"></div> -->
       <section class="about-section">
         <h2 class="about-section__heading">About Me</h2>
         <p class="about-section__paragraph">
@@ -188,28 +190,29 @@
       </section>
       <section class="contact-section">
         <h2 class="contact-section__heading">
-          Want to get in touch? Please, feel free to contact me!
+          Want to get in touch? <br>
+          Feel free to contact me!
         </h2>
       
 
-      <div class="container">
+      <div class="contact-form">
         <form name="contact" method="POST" data-netlify="true">
       
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input class="contact-form__input" type="text" id="fname" name="firstname" placeholder="Your first name..">
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input class="contact-form__input" type="text" id="lname" name="lastname" placeholder="Your last name..">
       
           <label for="country">Country</label>
-          <select id="country" name="country">
+          <select class="contact-form__select" id="country" name="country">
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
           </select>
       
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea class="contact-form__textarea" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
           <button type="submit">Submit</button>
       
@@ -217,18 +220,14 @@
       </div>
     </section> 
     </main>
-    
-<!-- The Modal -->
-<div class="modal">
 
-  <!-- Modal content -->
+
+<div class="modal">
   <div class="modal-content">
-    
     <img class="modal-content__modal-img" src="" alt="">
     <span class="close" onclick="closeModal()">&times;</span>
     <p class="modal-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
   </div>
-
 </div>
 
 <script src="scripts/parallax.js"></script>
