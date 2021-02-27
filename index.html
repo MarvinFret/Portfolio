@@ -69,7 +69,7 @@
         <p class="about-section__paragraph">
           <img
             class="about-section__img"
-            src="img/portrait.png"
+            src="img/portrait.jpg"
             alt="A Picture of me. I'm smiling, of course"
             loading="lazy"
           />
@@ -89,7 +89,7 @@
         <img
           class="projects-section__header-img"
           src="img/Mockup-collection.png"
-          alt="Me, working on a project with my laptop."
+          alt="A Mockup of some of my projects."
           loading="lazy"
         />
         <div class="projects-section__phones translate-x-minus-50-px">
@@ -131,24 +131,26 @@
             <h3 class="showcase-content__heading">shopme</h3>
             <div class="showcase-content__main-content">
              
-              <div class="main-content__slide fade" onclick="openModal('shopme','img/shopme-3screens.jpg')">
+              <div class="main-content__slide fade" >
               <img class="showcase-content__img"
                 src="img/shopme-3screens.jpg"
                 alt="An image of a mockup showing 3 screens of a mobile app that i have developed. It is called shopme."
+                onclick="openModal('shopme',this)"
                 loading="lazy"
               >
               </div>
-              <div class="main-content__slide fade" onclick="openModal('wap', 'img/wap-cropped.png')">
+              <div class="main-content__slide fade" >
               <img class="showcase-content__img"
                 src="img/wap-cropped.png"
                 alt="An image of a mockup showing a phone with an apped opened on a table."
-              
+                onclick="openModal('wap', this)"
               >
               </div>
-              <div class="main-content__slide fade" onclick="openModal('deep', 'img/deep-mock.png')">
+              <div class="main-content__slide fade" >
                 <img class="showcase-content__img"
                 src="img/deep-mock.png" 
                 alt="A mockup of some of the projects i have done. The mockups float above a ocean blue canvas in an angle of 45 degrees."
+                onclick="openModal('deep', this)"
                 >
               </div>
 
@@ -222,12 +224,19 @@
     </main>
 
 
-<div class="modal">
-  <div class="modal-content">
+<div class="modal" role="dialog" aria-labelledby="modal-content__" aria-describedby="modal-content__text">
+  <div class="modal__grid">
+    <div class="modal-content__header">Shopme</div>
+    <img class="modal-content__img" src="" alt="">
+    <img class="modal-content__slides" src="img/brief.jpg" alt="" onclick="switchImg(this)">
+    <div class="modal-content__close" onclick="closeModal()"><span class="modal-content__close-button">&times;</span></div>
+    <p class="modal-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
+  </div>
+  <!-- <div class="modal-content">
     <img class="modal-content__modal-img" src="" alt="">
     <span class="close" onclick="closeModal()">&times;</span>
     <p class="modal-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
-  </div>
+  </div> -->
 </div>
 
 <script src="scripts/parallax.js"></script>

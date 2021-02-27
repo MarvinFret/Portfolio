@@ -1,14 +1,13 @@
 // Get the modal
-let modal = document.getElementsByClassName("modal")[0];
+const modal = document.getElementsByClassName("modal")[0];
 // Get main content of whole page
-let main = document.getElementsByTagName("main")[0];
+const main = document.getElementsByTagName("main")[0];
+// Get the main img
+const modalImg = document.getElementsByClassName("modal-content__img")[0];
 
 // When the user clicks the img, open the modal
-function openModal(project, imgSrc) {
-  const modalImg = document.getElementsByClassName(
-    "modal-content__modal-img"
-  )[0];
-  modalImg.src = imgSrc;
+function openModal(project, e) {
+  modalImg.src = e.src;
   setText(project);
   modal.style.visibility = "visible";
   modal.style.opacity = 1;
@@ -46,6 +45,10 @@ function setText(project) {
     console.log(Array.from(form));
     textEl.innerHTML = form;
   }
+}
+
+function switchImg(e) {
+  modalImg.src = e.src;
 }
 
 // When the user clicks anywhere outside of the modal, close it
