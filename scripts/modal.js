@@ -1,15 +1,17 @@
 // Get the modal
-const modal = document.getElementsByClassName("modal")[0];
+const modal = document.querySelector(".modal");
 // Get main content of whole page
-const main = document.getElementsByTagName("main")[0];
+const main = document.querySelector("main");
 // Get the main img
-const modalImg = document.getElementsByClassName("modal-content__img")[0];
+const modalImg = document.querySelector(".modal-content__img");
+//Get the main text
+const modalText = document.querySelector(".modal-content__text");
+//get the modal header
+const modalHeader = document.querySelector(".modal-content__header");
 
 // When the user clicks the img, open the modal
-async function openModal(project, e) {
-  console.log(await fetcher.fetchFile())
-  modalImg.src = e.src;
-  setText(project);
+async function openModal(projectTitle) {
+  setTextAndImages(projectTitle);
   modal.style.visibility = "visible";
   modal.style.opacity = 1;
   modal.style.width = "100%";
@@ -27,25 +29,14 @@ function closeModal() {
   modal.style.height = "25%";
 }
 
-function setText(project) {
-  const textEl = document.getElementsByClassName("modal-content__text")[0];
-  if (project === "shopme") {
-    textEl.innerHTML =
-      "This is shopme. I've designed and coded this app to help people out when they are struggling with their groceries. It was fun. To be continued!";
-  }
-  if (project === "wap") {
-    textEl.innerHTML =
-      "This is Wap. I've designed and coded this app to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. Enjoy!";
-  }
-  if (project === "deep") {
-    textEl.innerHTML =
-      "This is deep. I've designed this webshop for bass enthusiast. The goal is to put only a few, high-class and carefully selected basses in the spotlight. The shop is supposed to be less loaded then average instrument retailers to help the user focus on what matters: a good bass.";
-  }
-  if (project === "mail") {
-    const form = document.getElementsByTagName("form");
-    console.log(Array.from(form));
-    textEl.innerHTML = form;
-  }
+async function setTextAndImages(projectTitle) {
+  const response = await fetcher.fetchFile();
+  const projectData = response.Projects.filter(
+    (project, index) => project.Title === projectTitle
+  )[0];
+  modalHeader.text = projectData.Title;
+  modalImg.src = projectData.MainImageURL;
+  modalText.innerHTML = projectData.Text;
 }
 
 function switchImg(e) {

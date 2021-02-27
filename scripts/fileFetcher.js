@@ -1,13 +1,5 @@
 class FileFetcher {
   constructor() {
-    // const response = await fetch("./scripts/projects.json");
-    // this.data = await respinse.json();
-    // fetch("./scripts/projects.json")
-    //   .then((response) => {
-    //     return response.json();
-    //   })
-    //   .then((data) => (this.data = data))
-    //   .catch(err => console.log(err));
   }
   async fetchFile() {
     try {
