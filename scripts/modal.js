@@ -6,7 +6,8 @@ const main = document.getElementsByTagName("main")[0];
 const modalImg = document.getElementsByClassName("modal-content__img")[0];
 
 // When the user clicks the img, open the modal
-function openModal(project, e) {
+async function openModal(project, e) {
+  console.log(await fetcher.fetchFile())
   modalImg.src = e.src;
   setText(project);
   modal.style.visibility = "visible";
