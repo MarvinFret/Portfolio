@@ -121,3 +121,7 @@
 .scale-up{
   transform: scale(1.25);
 }
+
+.disable-scrolling{
+  overflow: hidden;
+}

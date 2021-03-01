@@ -1,12 +1,12 @@
 // Get the modal
 const modal = document.querySelector(".modal");
-// Get main content of whole page
+// Get main tag of whole page
 const main = document.querySelector("main");
-// Get the main img
+// Get the modal main img container
 const modalImg = document.querySelector(".modal-content__img");
-//Get the main text
+//Get the modal main text container
 const modalText = document.querySelector(".modal-content__text");
-//get the modal header
+//get the modal header container
 const modalHeader = document.querySelector(".modal-content__header");
 
 // When the user clicks the img, open the modal
@@ -16,17 +16,20 @@ async function openModal(projectTitle) {
   modal.style.opacity = 1;
   modal.style.width = "100%";
   modal.style.height = "100%";
-  // blur main
+  // main
   main.classList.add("blur-2");
+  document.body.classList.add("disable-scrolling");
 }
 
 // When the user clicks on <span> (x), close the modal
 function closeModal() {
-  main.classList.remove("blur-2");
   modal.style.visibility = "hidden";
   modal.style.opacity = 0;
   modal.style.width = "33%";
   modal.style.height = "25%";
+  //main
+  main.classList.remove("blur-2");
+  document.body.classList.remove("disable-scrolling");
 }
 
 async function setTextAndImages(projectTitle) {
@@ -46,10 +49,6 @@ function switchImg(e) {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.visibility = "hidden";
-    modal.style.opacity = 0;
-    modal.style.width = "33%";
-    modal.style.height = "25%";
-    main.classList.remove("blur-2");
+    closeModal();
   }
 };
