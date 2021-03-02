@@ -13,11 +13,25 @@
 //   alert(error))
 // }
 
-async function sendForm(e, form) {
-  try{
+// async function sendForm(e, form) {
+//   e.preventDefault();
+//   console.log(this)
+//   try{
+//   let res = await fetch('/', { method: "post", body: new FormData(form) });
+//   console.log(res.json())
+//   console.log("We send post asynchronously (AJAX)");
+//   } catch(err){console.log(err)}
+// }
+
+contactForm.onsubmit = async (e) => {
   e.preventDefault();
-  let res = await fetch(form.action, { method: "post", body: new FormData(form) });
-  console.log(res.json())
-  console.log("We send post asynchronously (AJAX)");
-  } catch(err){console.log(err)}
-}
+
+  let response = await fetch('/', {
+    method: 'POST',
+    body: new FormData(contactForm)
+  });
+
+  let result = await response.json();
+
+  alert(result.message);
+};
