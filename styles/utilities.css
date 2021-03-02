@@ -10,10 +10,10 @@ html, body{
     font-size: 10px;
     font-family: 'Mukta', Helvetica, sans serif;
     color: #1B4356;
-    -webkit-transition: all 400ms; /* Safari */
-    -moz-transition: all 400ms; /* mozilla */
-    -o-transition: all 400ms; /* opera */
-    transition: all 400ms;
+    /* -webkit-transition: all 400ms; 
+    -moz-transition: all 400ms; 
+    -o-transition: all 400ms; 
+    transition: all 400ms; */
 }
 
 ul, ol{

@@ -124,4 +124,5 @@
 
 .disable-scrolling{
   overflow: hidden;
+  padding-right: 16px;
 }

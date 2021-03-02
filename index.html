@@ -197,8 +197,8 @@
         </h2>
       
 
-      <div class="contact-form">
-        <form name="contact" method="POST" data-netlify="true">
+      <div class="contact-form-wrapper">
+        <form class="contact-form" name="contact" method="POST" onsubmit="sendForm(event, this)" data-netlify="true">
       
           <label for="fname">First Name</label>
           <input class="contact-form__input" type="text" id="fname" name="firstname" placeholder="Your first name..">
@@ -217,6 +217,7 @@
           <textarea class="contact-form__textarea" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
           <button type="submit">Submit</button>
+        
       
         </form>
       </div>
@@ -239,6 +240,7 @@
   </div> -->
 </div>
 
+<script src="scripts/form.js"></script>
 <script src="scripts/fileFetcher.js"></script>
 <script src="scripts/intersectionObserver.js" async></script>
 <script src="scripts/parallax.js"></script>
