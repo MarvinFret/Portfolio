@@ -20,7 +20,6 @@ function fanPhones() {
       .top /
       10;
   if (deg > 0 && deg <= 60) {
-    console.log(deg);
     document
       .querySelectorAll(".projects-section__phone")
       .forEach((el, index) => {
@@ -31,6 +30,5 @@ function fanPhones() {
           el.style.transform = "rotate(" + deg + "deg)";
         if (index > 2) el.style.transform = "rotate(" + deg + "deg)";
       });
-    //   document.querySelectorAll(".projects-section__phone")[3].style.transform = "rotate("+deg+"deg)";
   }
 }

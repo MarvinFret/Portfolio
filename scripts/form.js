@@ -16,7 +16,6 @@
 async function sendForm(e, form) {
   try{
   e.preventDefault();
-  console.log(new FormData(form));
   let res = await fetch(form.action, { method: "post", body: new FormData(form) });
   console.log(res.json())
   console.log("We send post asynchronously (AJAX)");
