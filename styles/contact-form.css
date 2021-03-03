@@ -1,5 +1,5 @@
 /* Add a background color and some padding around the form */
-.contact-form-wrapper {
+.contact-form {
   border-radius: 5px;
   font-size: 1.8rem;
 }

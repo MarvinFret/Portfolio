@@ -4,6 +4,10 @@ const modal = document.querySelector(".modal");
 const main = document.querySelector("main");
 // Get the modal main img container
 const modalImg = document.querySelector(".modal-content__img");
+// Get the modal slide wrapper
+const slidesWrapper = document.querySelector(".modal-content__slides-wrapper");
+const modalSlide = "<img class='modal-content__slide' src='' alt='' onclick='switchImg(this)''>";
+const modalSlideSelector = document.querySelectorAll(".modal-content__slide");
 //Get the modal main text container
 const modalText = document.querySelector(".modal-content__text");
 //get the modal header container
@@ -37,8 +41,16 @@ async function setTextAndImages(projectTitle) {
   const projectData = response.Projects.filter(
     (project, index) => project.Title === projectTitle
   )[0];
-  modalHeader.text = projectData.Title;
-  modalImg.src = projectData.MainImageURL;
+  projectData.ProjectImgs.forEach((img, index) => {
+    console.log(img)
+    slidesWrapper.innerHTML += modalSlide;
+    if (index > 0) {
+    } 
+  });
+  let slides = modalSlideSelector;
+    console.log(slides)
+  modalHeader.innerHTML = projectData.Title;
+  modalImg.src = projectData.ProjectImgs[0];
   modalText.innerHTML = projectData.Text;
 }
 

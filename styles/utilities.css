@@ -1,6 +1,7 @@
 :root{
 
 --main-drop-shadow: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.75));
+--main-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
 }
 
 html, body{
@@ -10,10 +11,6 @@ html, body{
     font-size: 10px;
     font-family: 'Mukta', Helvetica, sans serif;
     color: #1B4356;
-    /* -webkit-transition: all 400ms; 
-    -moz-transition: all 400ms; 
-    -o-transition: all 400ms; 
-    transition: all 400ms; */
 }
 
 ul, ol{

@@ -178,7 +178,8 @@ p {
 
 .showcase-content__img:hover {
   border-radius: 4px;
-  box-shadow: 0 0 20px 0 rgba(27, 67, 86, 0.65);
+  /* box-shadow: 0 0 20px 0 rgba(27, 67, 86, 0.65); */
+  box-shadow: var(--main-box-shadow);
   transform: scale(1.02);
 }
 

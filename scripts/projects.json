@@ -2,21 +2,18 @@
   "Projects": [
     {
       "Title": "Shopme",
-      "MainImageURL": "../img/shopme-3screens.jpg",
       "Text": "This is shopme. I've designed and coded this app to help people out when they are struggling with their groceries. It was fun. To be continued!",
-      "Slides": ["../img/brief.jpg", "../img/brief.png"]
+      "ProjectImgs": [ "../img/shopme-3screens.jpg", "../img/deep-mock.png", "../img/brief.png"]
     },
     {
       "Title": "Deep",
-      "MainImageURL": "../img/deep-mock.png",
       "Text": "This is deep. I've designed this webshop for bass enthusiast. The goal is to put only a few, high-class and carefully selected basses in the spotlight. The shop is supposed to be less loaded then average instrument retailers to help the user focus on what matters: a good bass.",
-      "Slides": ["../img/brief.jpg", "../img/brief.png"]
+      "ProjectImgs": ["../img/deep-mock.png","../img/brief.jpg", "../img/brief.png"]
     },
     {
       "Title": "Wap",
-      "MainImageURL": "../img/wap-cropped.png",
       "Text": "This is Wap. I've designed and coded this app to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. Enjoy!",
-      "Slides": ["../img/brief.jpg", "../img/brief.png"]
+      "ProjectImgs": ["../img/wap-cropped.png", "../img/brief.jpg", "../img/brief.png"]
     }
   ]
 }

@@ -197,8 +197,8 @@
         </h2>
       
 
-      <div class="contact-form-wrapper">
-        <form id="contactForm" class="contact-form" name="contact" method="POST"  data-netlify="true">
+      <div class="contact-form">
+        <form name="contact" method="POST" data-netlify="true">
       
           <label for="fname">First Name</label>
           <input class="contact-form__input" type="text" id="fname" name="firstname" placeholder="Your first name..">
@@ -217,7 +217,6 @@
           <textarea class="contact-form__textarea" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
           <button type="submit">Submit</button>
-        
       
         </form>
       </div>
@@ -225,22 +224,18 @@
     </main>
 
 
-<div class="modal" role="dialog" aria-labelledby="modal-content__" aria-describedby="modal-content__text">
+<div class="modal" role="dialog" aria-labelledby="modal-content__header" aria-describedby="modal-content__text">
   <div class="modal__grid">
     <div class="modal-content__header">test</div>
     <img class="modal-content__img" src="" alt="">
-    <img class="modal-content__slides" src="img/brief.jpg" alt="" onclick="switchImg(this)">
+    <div class="modal-content__slides-wrapper">
+    <!-- <img class="modal-content__slide" src="" alt="" onclick="switchImg(this)"> -->
+    </div>
     <div class="modal-content__close" onclick="closeModal()"><span class="modal-content__close-button">&times;</span></div>
     <p class="modal-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
   </div>
-  <!-- <div class="modal-content">
-    <img class="modal-content__modal-img" src="" alt="">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <p class="modal-content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt tempora, omnis modi reiciendis delectus nobis maxime quam consequatur quo, aliquid harum ipsum praesentium exercitationem qui consectetur at earum! Sint, repellendus! Sunt assumenda non.</p>
-  </div> -->
 </div>
 
-<script src="scripts/form.js"></script>
 <script src="scripts/fileFetcher.js"></script>
 <script src="scripts/intersectionObserver.js" async></script>
 <script src="scripts/parallax.js"></script>
