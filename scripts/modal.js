@@ -6,7 +6,8 @@ const main = document.querySelector("main");
 const modalImg = document.querySelector(".modal-content__img");
 // Get the modal slide wrapper
 const slidesWrapper = document.querySelector(".modal-content__slides-wrapper");
-const modalSlide = "<img class='modal-content__slide' src='' alt='' onclick='switchImg(this)''>";
+const modalSlide = document.createElement("IMG");
+// ;"<img class='modal-content__slide' src='' alt='' onclick='switchImg(this)''>";
 const modalSlideSelector = document.querySelectorAll(".modal-content__slide");
 //Get the modal main text container
 const modalText = document.querySelector(".modal-content__text");
@@ -27,6 +28,7 @@ async function openModal(projectTitle) {
 
 // When the user clicks on <span> (x), close the modal
 function closeModal() {
+  removeAllChildNodes(slidesWrapper);
   modal.style.visibility = "hidden";
   modal.style.opacity = 0;
   modal.style.width = "33%";
@@ -42,20 +44,19 @@ async function setTextAndImages(projectTitle) {
     (project, index) => project.Title === projectTitle
   )[0];
   projectData.ProjectImgs.forEach((img, index) => {
-    console.log(img)
-    slidesWrapper.innerHTML += modalSlide;
-    if (index > 0) {
-    } 
+    let projectImg = document.createElement("IMG");
+    projectImg.src = img;
+    projectImg.onclick = function (event) {
+      console.log(event.target);
+      event.target.classList.add("slide--active")
+      modalImg.src = img;
+    };
+    projectImg.classList.add("modal-content__slide");
+    slidesWrapper.appendChild(projectImg);
   });
-  let slides = modalSlideSelector;
-    console.log(slides)
   modalHeader.innerHTML = projectData.Title;
   modalImg.src = projectData.ProjectImgs[0];
   modalText.innerHTML = projectData.Text;
-}
-
-function switchImg(e) {
-  modalImg.src = e.src;
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -64,3 +65,9 @@ window.onclick = function (event) {
     closeModal();
   }
 };
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
