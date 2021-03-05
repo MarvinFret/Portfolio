@@ -2,8 +2,8 @@
   "Projects": [
     {
       "Title": "Shopme",
-      "Text": "This is shopme. I've designed and coded this app to help people out when they are struggling with their groceries. It was fun. To be continued!",
-      "ProjectImgs": [ "../img/shopme-3screens.jpg", "../img/deep-mock.png", "../img/brief.png"]
+      "Text": "This is shopme. I've designed and coded this web app to help people out when they are struggling with their groceries. You can try shopme by yourself if you follow <a href='https://shopmee.netlify.app/' target='_blank' alt='The link to my web app shopme.'>this Link</a>. There's no fancy version for regular desktop PCs. The experience is best if you visit it with your mobile phone. To be continued!",
+      "ProjectImgs": [ "../img/shopme-blue-bk.png", "../img/shopme-mkup2.png"]
     },
     {
       "Title": "Deep",
@@ -13,7 +13,7 @@
     {
       "Title": "Wap",
       "Text": "This is Wap. I've designed and coded this app to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. Enjoy!",
-      "ProjectImgs": ["../img/wap-cropped.png", "../img/brief.jpg", "../img/brief.png"]
+      "ProjectImgs": ["../img/wap-cropped.png"]
     }
   ]
 }

@@ -103,6 +103,7 @@ p {
 
 .about-section__img {
   width: 45%;
+  max-width: 190px;
   float: left;
   margin-right: 25px;
   margin-left: -50px;
@@ -139,6 +140,7 @@ p {
 .projects-section__arrow {
   position: absolute;
   cursor: pointer;
+  transition: 400ms;
 }
 
 .projects-section__arrow:hover {
@@ -154,6 +156,10 @@ p {
   right: 0;
 }
 
+.project-section__showcase-content{
+  width: 100%;
+}
+
 .showcase-content__main-content {
   display: flex;
   align-items: center;
@@ -162,7 +168,7 @@ p {
 .showcase-content__heading {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 0;
+  margin: 0 0 0 2px;
 }
 
 .showcase-content__paragraph {
@@ -176,12 +182,7 @@ p {
   box-shadow: none;
 }
 
-.showcase-content__img:hover {
-  border-radius: 4px;
-  /* box-shadow: 0 0 20px 0 rgba(27, 67, 86, 0.65); */
-  box-shadow: var(--main-box-shadow);
-  transform: scale(1.02);
-}
+
 
 .contact-section__heading {
   font-size: 3.6rem;

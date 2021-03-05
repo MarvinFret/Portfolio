@@ -21,27 +21,17 @@
 }
 
 /* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  margin: auto;
-  padding: 50px;
-  border-radius: 4px;
-  box-shadow: 0 0 20px 0 #33333394;
-  width: 50%;
-  text-align: center;
-}
 
 .modal-content__header {
   grid-area: header;
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 0;
+  margin: auto 0 auto 4px;
 }
 
 .modal-content__img {
   grid-area: img;
-  width: 500px;
+  width: 100%;
 }
 
 /* The Close Button */
@@ -63,18 +53,27 @@
 .modal-content__slide {
   grid-area: slides;
   width: 100%;
-  max-width: 220px;
+  max-width: 80px;
   transition: 400ms;
   cursor: pointer;
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+.slide--active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 img.modal-content__slide:hover {
   box-shadow: var(--main-box-shadow);
-  transform: scale(1.02); 
+  transform: scale(1.02);
+  opacity: 1;
 }
 
 .modal-content__text {
   grid-area: text;
+  margin-top: 0;
 }
 
 .modal__grid {
@@ -82,9 +81,11 @@ img.modal-content__slide:hover {
   grid-template-areas:
     "header header header header close"
     " img img img img slides"
-    " text text text text text";
+    " text text text text none";
   grid-gap: 25px;
   background-color: #fff;
-  padding: 25px;
+  padding: 0 25px;
   width: 50%;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0 #33333394;
 }

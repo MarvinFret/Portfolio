@@ -47,13 +47,16 @@ async function setTextAndImages(projectTitle) {
     let projectImg = document.createElement("IMG");
     projectImg.src = img;
     projectImg.onclick = function (event) {
-      console.log(event.target);
-      event.target.classList.add("slide--active")
+      const slides = document.getElementsByClassName("modal-content__slide");
+      for (let i = 0; i < slides.length; i++)
+        slides[i].classList.remove("slide--active");
+      event.target.classList.add("slide--active");
       modalImg.src = img;
     };
     projectImg.classList.add("modal-content__slide");
     slidesWrapper.appendChild(projectImg);
   });
+  document.querySelector(".modal-content__slide").classList.add("slide--active");
   modalHeader.innerHTML = projectData.Title;
   modalImg.src = projectData.ProjectImgs[0];
   modalText.innerHTML = projectData.Text;

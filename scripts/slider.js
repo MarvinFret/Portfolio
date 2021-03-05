@@ -32,7 +32,7 @@ function showSlides(n) {
 }
 
 function changeTitleAndModalText(n) {
-  const title = document.getElementsByClassName("showcase-content__heading")[0];
+  const title = document.getElementsByClassName("showcase-content__heading")[n-1];
   if (n === 1) {
     title.innerHTML = "Shopme";
   }
