@@ -2,18 +2,19 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n, type) {
+  showSlides((slideIndex += n), type);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(n, type) {
+  showSlides((slideIndex = n), type);
 }
 
-function showSlides(n) {
-  let slides = document.getElementsByClassName("main-content__slide");
-  let dots = document.getElementsByClassName("dot-wrapper__dot");
+function showSlides(n, type) {
+  console.log(type);
+  const slides = document.getElementsByClassName("main-content__slide");
+  const dots = document.getElementsByClassName("dot-wrapper__dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -26,13 +27,19 @@ function showSlides(n) {
   for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  slides[slideIndex - 1].classList.remove("slide-right", "slide-left", "fade");
   slides[slideIndex - 1].style.display = "block";
+  if (type === "dot") slides[slideIndex - 1].classList.add("fade");
+  if (type === "right") slides[slideIndex - 1].classList.add("slide-right");
+  if (type === "left") slides[slideIndex - 1].classList.add("slide-left");
   dots[slideIndex - 1].className += " active";
   changeTitleAndModalText(slideIndex);
 }
 
 function changeTitleAndModalText(n) {
-  const title = document.getElementsByClassName("showcase-content__heading")[n-1];
+  const title = document.getElementsByClassName("showcase-content__heading")[
+    n - 1
+  ];
   if (n === 1) {
     title.innerHTML = "Shopme";
   }
