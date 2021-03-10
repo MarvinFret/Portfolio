@@ -2,17 +2,17 @@
   "Projects": [
     {
       "Title": "Shopme",
-      "Text": "This is shopme. I've designed and coded this web app to help people out when they are struggling with their groceries. You can try shopme by yourself if you follow <a href='https://shopmee.netlify.app/' target='_blank' alt='The link to my web app shopme.'>this Link</a>. There's no fancy version for regular desktop PCs. The experience is best if you visit it with your mobile phone. To be continued!",
+      "Text": "This is shopme. I've designed and coded this web app to help people out when they are struggling with their groceries. You can try shopme by yourself if you follow <a href='https://shopmee.netlify.app/' target='_blank' alt='The link to my web app shopme.'>this Link</a>. There's no fancy version for regular desktop PCs. Therefore, the experience is best if you visit it with your mobile phone. To be continued!",
       "ProjectImgs": [ "../img/shopme-blue-bk.png", "../img/shopme-mkup2.png"]
     },
     {
       "Title": "Deep",
-      "Text": "This is deep. I've designed this webshop for bass enthusiast. The goal is to put only a few, high-class and carefully selected basses in the spotlight. The shop is supposed to be less loaded then average instrument retailers to help the user focus on what matters: a good bass.",
-      "ProjectImgs": ["../img/deep-mock.png"]
+      "Text": "This is deep. It's a webshop that I've designed for bass enthusiast. The goal is to put only a few, high-class and carefully selected basses in the spotlight. The shop is supposed to be less loaded then average instrument retailer webshops to help the user focus on finding what matters to them most: a good bass.",
+      "ProjectImgs": ["../img/deep-laptop.jpg","../img/deep-mock.png"]
     },
     {
       "Title": "Wap",
-      "Text": "This is Wap. I've designed and coded this app to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. Enjoy!",
+      "Text": "This is my map-app called Wap. I've designed and coded it to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. You can sign up to share your favourite places with your friends and the world. Enjoy!",
       "ProjectImgs": ["../img/wap-cropped.png"]
     }
   ]

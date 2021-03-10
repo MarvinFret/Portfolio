@@ -2,6 +2,7 @@
 .contact-form {
   border-radius: 5px;
   font-size: 1.8rem;
+  margin-bottom: 50px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -29,7 +30,7 @@
 
 /* Style the submit button with a specific background color etc */
 button[type="submit"] {
-  background-color: rgba(27, 67, 86, 0.75);
+  background-color: #1B4356;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -39,9 +40,9 @@ button[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 button[type="submit"]:hover {
-  background-color: #1B4356;
+  background-color: #132e3a;
 }
 button[type="submit"]:focus {
-  background-color: #1B4356;
+  background-color: #132e3a;
   border-radius: 4px;
 }

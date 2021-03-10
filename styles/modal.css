@@ -50,6 +50,10 @@
   cursor: pointer;
 }
 
+.modal-content__slides-wrapper{
+  max-width: 85px;
+}
+
 .modal-content__slide {
   grid-area: slides;
   width: 100%;
@@ -85,7 +89,7 @@ img.modal-content__slide:hover {
   grid-gap: 25px;
   background-color: #fff;
   padding: 0 25px;
-  width: 50%;
+  width: 45%;
   border-radius: 4px;
   box-shadow: 0 0 20px 0 #33333394;
 }
