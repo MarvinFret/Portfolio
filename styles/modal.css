@@ -52,6 +52,7 @@
 
 .modal-content__slides-wrapper{
   max-width: 85px;
+  margin-left: 25px;
 }
 
 .modal-content__slide {
@@ -77,7 +78,7 @@ img.modal-content__slide:hover {
 
 .modal-content__text {
   grid-area: text;
-  margin-top: 0;
+  margin-top: 25px;
 }
 
 .modal__grid {
@@ -86,7 +87,7 @@ img.modal-content__slide:hover {
     "header header header header close"
     " img img img img slides"
     " text text text text none";
-  grid-gap: 25px;
+  grid-template-columns: repeat(5, auto) ;
   background-color: #fff;
   padding: 0 25px;
   width: 45%;

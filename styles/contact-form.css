@@ -25,12 +25,12 @@
 .contact-form__select:focus,
 .contact-form__textarea:focus {
   outline: none;
-  border-bottom: 2px solid #1B4356;
+  border-bottom: 2px solid #1b4356;
 }
 
 /* Style the submit button with a specific background color etc */
 button[type="submit"] {
-  background-color: #1B4356;
+  background-color: #1b4356;
   color: white;
   padding: 12px 20px;
   border: none;
