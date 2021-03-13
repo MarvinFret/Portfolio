@@ -12,7 +12,6 @@ function currentSlide(n, type) {
 }
 
 function showSlides(n, type) {
-  console.log(type);
   const slides = document.getElementsByClassName("main-content__slide");
   const dots = document.getElementsByClassName("dot-wrapper__dot");
   if (n > slides.length) {
