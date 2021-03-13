@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 450px) and (max-width: 1024px) {
   header {
     height: 550px;
   }
@@ -20,6 +20,88 @@
 
   .projects-section__heading{
     font-size: 2.6rem;
+    margin-top: -28px;
+  }
+
+  .modal__grid{
+    width: 80%;
+  }
+
+  .contact-section__heading{
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    height: 350px;
+  }
+  section {
+    width: 80%;
+  }
+  p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  footer{
+    margin-top: 50px;
+  }
+
+  .text-wrapper__name{
+    font-size: 2rem;
+  }
+  .text-wrapper__heading{
+    font-size: 3rem;
+  }
+
+  .coffe-bean{
+    top: 260px;
+  }
+
+  .about-section__heading{
+    font-size: 2.4rem;
+    margin-top: 15px;
+  }
+
+  .projects-section__heading{
+    font-size: 2.4rem;
+    margin-top: -25px;
+  }
+
+  .projects-section__phone {
+    display: none;
+  }
+
+.project-section__arrow{
+  display: none;
+}
+
+.modal__grid{
+  display: grid;
+  grid-template-areas:
+      "header header header header close"
+      "img img img img img"
+      "slides slides slides slides slides"
+      "text text text text text";
+  padding: 0 15px;
+  width: 100%;
+}
+
+.modal-content__slides-wrapper{
+  grid-area: slides;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.modal-content__text{
+margin: 15px 0;
+}
+
+  .contact-section__heading{
+    font-size: 2.4rem;
     margin-top: -28px;
   }
 }
