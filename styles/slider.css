@@ -15,7 +15,9 @@
 
 /* The dots/bullets/indicators */
 .dot-wrapper {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 0;
 }
 
@@ -23,7 +25,7 @@
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 5px 10px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
