@@ -76,8 +76,8 @@ a{
 }
 
 footer{
+    position: relative;
     box-sizing: border-box;
-    height: 40px;
     width: 100%;
     background-color: #a1bbc7;
     text-align: center;

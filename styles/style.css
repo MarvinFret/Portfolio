@@ -188,6 +188,7 @@ p {
 }
 
 .footer__bicycle {
-  width: 50px;
-  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
