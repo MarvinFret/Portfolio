@@ -93,3 +93,54 @@
     transform: translateX(0);
   }
 }
+
+/* Flip animation & send animation */
+
+.flip {
+  -webkit-animation-name: flip;
+  -webkit-animation-duration: .3s;
+  animation-name: flip;
+  animation-duration: .3s;
+}
+
+@keyframes flip{
+  0%{
+    transform: scaleX(1);
+  }
+  50%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes flip{
+  0%{
+    transform: scaleX(1);
+  }
+  50%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+.send{
+  -webkit-animation-name: send;
+  -webkit-animation-duration: .4s;
+  animation-name: send;
+  animation-duration: .4s;
+}
+
+@keyframes send{
+  0%{
+    opacity: 1;
+    transform:translateX(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
