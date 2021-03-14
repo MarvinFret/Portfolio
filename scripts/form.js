@@ -10,7 +10,7 @@ const handleSubmit = (e) => {
   letterIlluWrapper.classList.add("send");
   const formData = new FormData(form);
 
-  fetch("https://jsonplaceholder.typicode.com/posts", {
+  fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
