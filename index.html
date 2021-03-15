@@ -194,14 +194,20 @@
       <div class="contact-form">
         <form name="contact" method="POST" data-netlify="true">
       
-          <label for="fname">First Name</label>
-          <input class="contact-form__input" type="text" id="firstname" name="firstname" placeholder="Your first name..">
+          <label for="fullname">Full Name*</label>
+          <input class="contact-form__input" type="text" id="fullname" name="fullname" placeholder="Your full name..">
       
-          <label for="lname">Last Name</label>
-          <input class="contact-form__input" type="text" id="lastname" name="lastname" placeholder="Your last name..">
+          <label for="company">Company</label>
+          <input class="contact-form__input" type="text" id="company" name="company" placeholder="Your company..">
+
+          <label for="email">E-Mail Adress*</label>
+          <input class="contact-form__input" type="text" id="email" name="email" placeholder="Your Email adress..">
+
+          <label for="subject">Subject*</label>
+          <input class="contact-form__input" type="text" id="subject" name="subject" placeholder="What's the matter?">
       
-          <label for="message">Your Message</label>
-          <textarea class="contact-form__textarea" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          <label for="message">Your Message*</label>
+          <textarea class="contact-form__textarea" id="message" name="message" placeholder="All the details go here." style="height:200px"></textarea>
       
           <button class="contact-form__submit-button" type="submit">Submit</button>
           <div class="contact-form__letter-illu-wrapper"><img class="contact-form__letter-illu" src="img/illu/Letter_back.png" alt="The back of the letter you are about to send to me."></div>
