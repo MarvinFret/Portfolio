@@ -128,13 +128,13 @@
 /* slide out to bottom */
 
 .slide-out-to-bottom {
-  -webkit-animation-name: slide-out-to-bottom ;
+  -webkit-animation-name: slide-out-to-bottom;
   -webkit-animation-duration: 0.8s;
-  animation-name: slide-out-to-bottom ;
+  animation-name: slide-out-to-bottom;
   animation-duration: 0.8s;
 }
 
-@-webkit-keyframes slide-out-to-bottom  {
+@-webkit-keyframes slide-out-to-bottom {
   from {
     opacity: 1;
     transform: translateY(0);
@@ -145,7 +145,7 @@
   }
 }
 
-@keyframes slide-out-to-bottom  {
+@keyframes slide-out-to-bottom {
   from {
     opacity: 1;
     transform: translateY(0);
@@ -155,7 +155,6 @@
     transform: translateY(100px);
   }
 }
-
 
 /* Flip animation */
 
@@ -209,7 +208,6 @@
   }
 }
 
-/* shake animation  */
 @-webkit-keyframes send {
   0% {
     opacity: 1;
@@ -221,6 +219,7 @@
   }
 }
 
+/* shake animation  */
 .shake {
   -webkit-animation-name: shake;
   -webkit-animation-duration: 0.4s;
@@ -233,13 +232,13 @@
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-25px);
+    transform: translateX(-15px);
   }
   50% {
-    transform: translateX(25px);
+    transform: translateX(15px);
   }
   75% {
-    transform: translateX(-25px);
+    transform: translateX(-15px);
   }
   100% {
     transform: translateX(0);
@@ -251,13 +250,13 @@
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-25px);
+    transform: translateX(-15px);
   }
   50% {
-    transform: translateX(25px);
+    transform: translateX(15px);
   }
   75% {
-    transform: translateX(-25px);
+    transform: translateX(-15px);
   }
   100% {
     transform: translateX(0);
