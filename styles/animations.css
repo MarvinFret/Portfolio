@@ -1,26 +1,26 @@
 @keyframes bean {
-    50% {
-      transform: translateY(-20px);
-    }
+  50% {
+    transform: translateY(-20px);
   }
+}
 
-  @keyframes heading {
-    100% {
-      font-size: 7rem;
-    }
+@keyframes heading {
+  100% {
+    font-size: 7rem;
   }
+}
 
-  /* fadeing animation */
+/* fadeing animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: .8s;
+  -webkit-animation-duration: 0.8s;
   animation-name: fade;
-  animation-duration: .8s;
+  animation-duration: 0.8s;
 }
 
 @-webkit-keyframes fade {
   from {
-    opacity: .2;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -28,19 +28,19 @@
 }
 @keyframes fade {
   from {
-    opacity: .2;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
   }
 }
 
-  /* Slideing animation */
+/* Slideing animation */
 .slide-right {
   -webkit-animation-name: slide-right;
-  -webkit-animation-duration: .8s;
+  -webkit-animation-duration: 0.8s;
   animation-name: slide-right;
-  animation-duration: .8s;
+  animation-duration: 0.8s;
 }
 
 @-webkit-keyframes slide-right {
@@ -67,9 +67,9 @@
 
 .slide-left {
   -webkit-animation-name: slide-left;
-  -webkit-animation-duration: .8s;
+  -webkit-animation-duration: 0.8s;
   animation-name: slide-left;
-  animation-duration: .8s;
+  animation-duration: 0.8s;
 }
 
 @-webkit-keyframes slide-left {
@@ -94,53 +94,172 @@
   }
 }
 
-/* Flip animation & send animation */
+/* slide in from bottom */
+
+.slide-in-from-bottom {
+  -webkit-animation-name: slide-in-from-bottom;
+  -webkit-animation-duration: 0.8s;
+  animation-name: slide-in-from-bottom;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes slide-in-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* slide out to bottom */
+
+.slide-out-to-bottom {
+  -webkit-animation-name: slide-out-to-bottom ;
+  -webkit-animation-duration: 0.8s;
+  animation-name: slide-out-to-bottom ;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes slide-out-to-bottom  {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes slide-out-to-bottom  {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+
+/* Flip animation */
 
 .flip {
   -webkit-animation-name: flip;
-  -webkit-animation-duration: .3s;
+  -webkit-animation-duration: 0.3s;
   animation-name: flip;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
 }
 
-@keyframes flip{
-  0%{
+@keyframes flip {
+  0% {
     transform: scaleX(1);
   }
-  50%{
+  50% {
     transform: scaleX(0);
   }
-  100%{
+  100% {
     transform: scaleX(1);
   }
 }
 
-@-webkit-keyframes flip{
-  0%{
+@-webkit-keyframes flip {
+  0% {
     transform: scaleX(1);
   }
-  50%{
+  50% {
     transform: scaleX(0);
   }
-  100%{
+  100% {
     transform: scaleX(1);
   }
 }
 
-.send{
+/* send animation  */
+.send {
   -webkit-animation-name: send;
-  -webkit-animation-duration: .4s;
+  -webkit-animation-duration: 0.5s;
   animation-name: send;
-  animation-duration: .4s;
+  animation-duration: 0.5s;
 }
 
-@keyframes send{
-  0%{
+@keyframes send {
+  0% {
     opacity: 1;
-    transform:translateX(0);
+    transform: translateX(0);
   }
-  100%{
+  100% {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(350px);
+  }
+}
+
+/* shake animation  */
+@-webkit-keyframes send {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(350px);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 0.4s;
+  animation-name: shake;
+  animation-duration: 0.4s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  75% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  75% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

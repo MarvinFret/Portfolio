@@ -1,17 +1,16 @@
 const form = document.querySelector("form");
-
 const submitButton = document.querySelector(".contact-form__submit-button");
 const letterIllu = document.querySelector(".contact-form__letter-illu");
 const letterIlluWrapper = document.querySelector(
   ".contact-form__letter-illu-wrapper"
 );
+const textWarning = document.querySelector(".contact-form__text-warning");
 
 const handleSubmit = (e) => {
   e.preventDefault();
   if (checkRequiredFields()) {
     letterIlluWrapper.classList.add("send");
     const formData = new FormData(form);
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -21,6 +20,7 @@ const handleSubmit = (e) => {
         if (response.ok) {
           console.log("Form successfully submitted");
           letterIlluWrapper.innerHTML = "Success!";
+          form.reset();
           return;
         }
         return Promise.reject(response);
@@ -40,13 +40,18 @@ const handleSubmit = (e) => {
         }, 400);
       });
   }
-  if (!checkRequiredFields()) console.log("fields requoired");
+  if (!checkRequiredFields()) {
+    setTimeout(function () {
+      letterIllu.classList.remove("shake");
+      textWarning.classList.add("slide-in-from-bottom");
+      textWarning.style.opacity = 1;
+    }, 400);
+  }
 };
-const flipImg = (e) => {
+
+function flipImg(e) {
   e.preventDefault;
-
   letterIllu.classList.add("flip");
-
   setTimeout(function () {
     if (e.type === "mouseenter") {
       letterIllu.src = "../img/illu/Letter_front.png";
@@ -55,21 +60,28 @@ const flipImg = (e) => {
       letterIllu.src = "../img/illu/Letter_back.png";
     }
   }, 150);
-
   setTimeout(function () {
     letterIllu.classList.remove("flip");
   }, 300);
-};
+}
+
+function checkRequiredFields() {
+  let fullname = document.querySelector("#fullname").value.replace(/\s/g, "");
+  let email = document.querySelector("#email").value.replace(/\s/g, "");
+  let subject = document.querySelector("#subject").value.replace(/\s/g, "");
+  let message = document.querySelector("#message").value.replace(/\s/g, "");
+  if (fullname && email && subject && message) {
+    textWarning.classList.remove("slide-in-from-bottom");
+    textWarning.classList.add("slide-out-to-bottom");
+    setTimeout(function () {
+      textWarning.style.opacity = 0;
+    }, 400);
+    return true;
+  }
+  letterIllu.classList.add("shake");
+  return false;
+}
 
 form.addEventListener("submit", handleSubmit);
 submitButton.addEventListener("mouseenter", flipImg);
 submitButton.addEventListener("mouseleave", flipImg);
-
-function checkRequiredFields() {
-  let fullname = document.querySelector("#fullname").value.replace(/\s/g, '');
-  let email = document.querySelector("#email").value.replace(/\s/g, '');
-  let subject = document.querySelector("#subject").value.replace(/\s/g, '');
-  let message = document.querySelector("#message").value.replace(/\s/g, '');
-  if (fullname && email && subject && message) return true;
-  return false;
-}
