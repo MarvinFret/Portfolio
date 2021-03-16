@@ -17,6 +17,7 @@
 
 /* Style inputs with type="text", select elements and textareas */
 .contact-form__input[type="text"],
+.contact-form__input[type="email"],
 .contact-form__select,
 .contact-form__textarea {
   width: 100%; /* Full width */
@@ -33,6 +34,7 @@
 }
 
 .contact-form__input[type="text"]:focus,
+.contact-form__input[type="email"]:focus,
 .contact-form__select:focus,
 .contact-form__textarea:focus {
   outline: none;
@@ -82,7 +84,6 @@ text-align: center;
 font-size: 1.6rem;
 color: #00751F;
 text-align: center;
-opacity: 0;
 }
 
 .contact-form__letter-illu-wrapper{

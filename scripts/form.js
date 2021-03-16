@@ -13,29 +13,25 @@ const handleSubmit = (e) => {
   if (checkRequiredFields()) {
     letterIlluWrapper.classList.add("send");
     const formData = new FormData(form);
-    fetch("/", {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
       .then(function (response) {
         if (response.ok) {
-          console.log("Form successfully submitted");
           letterIlluWrapper.innerHTML =
-            "<span class='contact-form__send-success slide-in-from-bottom'>Send &#10004;</span>";
+            "<span class='contact-form__send-success slide-in-from-bottom'>Successfully Send &#10004;</span>";
           form.reset();
           return;
         }
         return Promise.reject(response);
       })
-      .then(function (data) {
-        console.log(data);
-      })
       .catch(function (error) {
         console.warn(error);
         setTimeout(function () {
           letterIlluWrapper.innerHTML =
-            "<span class='contact-form__send-warning slide-in-from-bottom'>Failed &#10008;</span>";
+            "<span class='contact-form__send-warning slide-in-from-bottom'>Sending Failed &#10008;</span>";
         }, 400);
       })
       .finally(() => {
