@@ -4,7 +4,9 @@ const letterIllu = document.querySelector(".contact-form__letter-illu");
 const letterIlluWrapper = document.querySelector(
   ".contact-form__letter-illu-wrapper"
 );
-const textWarning = document.querySelector(".contact-form__text-warning");
+const textWarning = document.querySelector(
+  ".contact-form__required-fields-warning"
+);
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -19,7 +21,8 @@ const handleSubmit = (e) => {
       .then(function (response) {
         if (response.ok) {
           console.log("Form successfully submitted");
-          letterIlluWrapper.innerHTML = "Success!";
+          letterIlluWrapper.innerHTML =
+            "<span class='contact-form__send-success slide-in-from-bottom'>Send &#10004;</span>";
           form.reset();
           return;
         }
@@ -31,7 +34,8 @@ const handleSubmit = (e) => {
       .catch(function (error) {
         console.warn(error);
         setTimeout(function () {
-          letterIlluWrapper.innerHTML = "Failed &times;";
+          letterIlluWrapper.innerHTML =
+            "<span class='contact-form__send-warning slide-in-from-bottom'>Failed &#10008;</span>";
         }, 400);
       })
       .finally(() => {
@@ -71,11 +75,14 @@ function checkRequiredFields() {
   let subject = document.querySelector("#subject").value.replace(/\s/g, "");
   let message = document.querySelector("#message").value.replace(/\s/g, "");
   if (fullname && email && subject && message) {
-    textWarning.classList.remove("slide-in-from-bottom");
-    textWarning.classList.add("slide-out-to-bottom");
-    setTimeout(function () {
+    if (textWarning.classList.contains("slide-in-from-bottom")) {
+      textWarning.classList.remove("slide-in-from-bottom");
+      textWarning.classList.add("slide-out-to-bottom");
+      setTimeout(function () {
       textWarning.style.opacity = 0;
     }, 400);
+    }
+    
     return true;
   }
   letterIllu.classList.add("shake");

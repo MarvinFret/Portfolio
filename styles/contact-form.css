@@ -6,6 +6,15 @@
   margin-bottom: 50px;
 }
 
+.contact-form__label{
+  padding-left: 3px;
+}
+
+.contact-form__asteriks{
+  color: #C2161B;
+  font-weight: 700;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 .contact-form__input[type="text"],
 .contact-form__select,
@@ -15,13 +24,12 @@
   border: 1px solid #a1bbc7; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   box-shadow: 0 2px 6px 0 #a1bbc7 inset;
   transition: 100ms;
   font-size: 1.6rem;
-  color: #1b4356;
+  color: hsl(199, 52%, 22%);
 }
 
 .contact-form__input[type="text"]:focus,
@@ -57,9 +65,22 @@ button[type="submit"]:focus {
   border-radius: 4px;
 }
 
-.contact-form__text-warning{
+.contact-form__required-fields-warning{
 font-size: 1.6rem;
-color: red;
+color: #C2161B;
+text-align: center;
+opacity: 0;
+}
+
+.contact-form__send-warning{
+font-size: 1.6rem;
+color: #C2161B;
+text-align: center;
+}
+
+.contact-form__send-success{
+font-size: 1.6rem;
+color: #00751F;
 text-align: center;
 opacity: 0;
 }
