@@ -13,7 +13,7 @@
     {
       "Title": "Wap",
       "Text": "This is my map-app called Wap. I've designed and coded it to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. You can sign up to share your favourite places with your friends and the world. Enjoy!",
-      "ProjectImgs": ["../img/wap1.jpg", "../img/wap-cropped.png"]
+      "ProjectImgs": ["../img/wap1-small.jpg", "../img/wap-cropped.png"]
     }
   ]
 }
