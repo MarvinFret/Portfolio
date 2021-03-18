@@ -42,7 +42,7 @@
     width: 80%;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2rem;
   }
   footer {
@@ -114,10 +114,10 @@
   .contact-form__input[type="text"],
   .contact-form__select,
   .contact-form__textarea {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .contact-form__text-warning {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
