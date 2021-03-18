@@ -73,6 +73,8 @@ ul, ol{
 
 a{
     text-decoration: none;
+    color: #005e8a;
+    font-weight: 500;
 }
 
 img{

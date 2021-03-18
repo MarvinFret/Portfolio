@@ -109,6 +109,10 @@ p {
   margin-left: -50px;
 }
 
+.projects-section{
+margin-top: 100px;
+}
+
 .projects-section__heading {
   font-size: 3.6rem;
   font-weight: 500;
