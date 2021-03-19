@@ -7,7 +7,6 @@ const modalImg = document.querySelector(".modal-content__img");
 // Get the modal slide wrapper
 const slidesWrapper = document.querySelector(".modal-content__slides-wrapper");
 const modalSlide = document.createElement("IMG");
-// ;"<img class='modal-content__slide' src='' alt='' onclick='switchImg(this)''>";
 const modalSlideSelector = document.querySelectorAll(".modal-content__slide");
 //Get the modal main text container
 const modalText = document.querySelector(".modal-content__text");

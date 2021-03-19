@@ -46,6 +46,6 @@ function changeTitleAndModalText(n) {
     title.innerHTML = "Wap";
   }
   if (n === 3) {
-    title.innerHTML = "Deep Down";
+    title.innerHTML = "Deep";
   }
 }
