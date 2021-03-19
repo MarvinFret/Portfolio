@@ -4,7 +4,7 @@
     height: 550px;
   }
   section {
-    width: 50%;
+    width:  425px;
   }
 
   .text-wrapper__heading {
@@ -17,6 +17,10 @@
 
   .about-section__heading {
     font-size: 2.6rem;
+  }
+
+  .about-section__img{
+    width: 175px;
   }
 
   .projects-section__heading {
@@ -63,6 +67,10 @@
   .about-section__heading {
     font-size: 2.4rem;
     margin-top: 15px;
+  }
+
+  .about-section__img{
+    min-width: 125px;
   }
 
   .projects-section__heading {

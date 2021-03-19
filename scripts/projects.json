@@ -2,7 +2,7 @@
   "Projects": [
     {
       "Title": "Shopme",
-      "Text": "This is shopme. I've designed and coded this web app to help people out when they are struggling with their groceries. You can try shopme by yourself if you follow <a href='https://shopmee.netlify.app/' target='_blank' alt='The link to my web app shopme.'>this Link</a>. There's no fancy version for regular desktop PCs. Therefore, the experience is best if you visit it with your mobile phone.",
+      "Text": "This is shopme. I've designed and coded this web app to help people out when they are struggling with their groceries. You can try shopme by yourself if you follow <a href='https://shopmee.netlify.app/' target='_blank' alt='The link to my web app shopme.'>this link</a>. There's no fancy version for regular desktop PCs. Therefore, the experience is best if you visit it with your mobile phone.",
       "ProjectImgs": [ "../img/shopme-blue-bk.jpg", "../img/shopme-mkup2.jpg"]
     },
     {

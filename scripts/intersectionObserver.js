@@ -8,7 +8,7 @@ const observer = new IntersectionObserver(
     if (entries[0].isIntersecting === false)
       document.removeEventListener("scroll", fanPhones);
   },
-  { threshold: [0.2] }
+  { threshold: [0.1] }
 );
 
 observer.observe(document.querySelector(".projects-section__phone"));
