@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Marvin Fretter. UI/UX Design and Development from Germany.">
+    <meta name="Description" content="Marvin Fretter. UI/UX Design and Development from Germany." />
     <meta name="msvalidate.01" content="FC4953CD9F8040DCEDCD24E2C8B970D0" />
     <meta name="google-site-verification" content="MF7RcFqyFQGOKGp6dFGhGoQFtjQJ3lBw4wRpoRNaL2o" />
     
@@ -15,17 +15,135 @@
     <link rel="stylesheet" href="styles/modal.css" async/>
     <link rel="stylesheet" href="styles/slider.css"async />
     <link rel="stylesheet" href="styles/contact-form.css" async/>
-    
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/queries.css" />
+
+    <style>
+      
+/* mukta-regular - latin */
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mukta-v7-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/mukta-v7-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/mukta-v7-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/mukta-v7-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/mukta-v7-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/mukta-v7-latin-regular.svg#Mukta")
+      format("svg"); /* Legacy iOS */
+}
+/* mukta-500 - latin */
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/mukta-v7-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/mukta-v7-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/mukta-v7-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/mukta-v7-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/mukta-v7-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/mukta-v7-latin-500.svg#Mukta")
+      format("svg"); /* Legacy iOS */
+}
+/* mukta-700 - latin */
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mukta-v7-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/mukta-v7-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/mukta-v7-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/mukta-v7-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/mukta-v7-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/mukta-v7-latin-700.svg#Mukta")
+      format("svg"); /* Legacy iOS */
+}
+/* mukta-800 - latin */
+@font-face {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/mukta-v7-latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/mukta-v7-latin-800.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/mukta-v7-latin-800.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/mukta-v7-latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/mukta-v7-latin-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/mukta-v7-latin-800.svg#Mukta")
+      format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --main-drop-shadow: drop-shadow(10px 40px 30px rgba(0, 0, 0, 0.75));
+  --main-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Mukta", Helvetica, sans serif;
+  color: #1b4356;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #00121b;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #ff8c22;
+}
+
+img {
+  border-radius: 4px;
+}
+
+input,
+button {
+  font-family: "Mukta", Helvetica, sans serif;
+}
+
+footer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #a1bbc7;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-top: 75px;
+}
+    </style>
 
     <title>Marvin Fretter - Freelance Design and Development</title>
   </head>
   <body>
     <header>
           <div class="hero__img-wrapper">
-      <img src="img/illu/iPad_png.png" alt="" class="img-wrapper__left-img" ></img>
-      <img src="img/illu/Laptop_png2.png" alt="" class="img-wrapper__right-img">
+      <img src="img/illu/iPad.webp" alt="" class="img-wrapper__left-img" ></img>
+      <img src="img/illu/Laptop.webp" alt="" class="img-wrapper__right-img">
     </div>
       <div class="hero__text-wrapper">
         <span class="text-wrapper__name">Marvin Fretter</span>
@@ -33,7 +151,7 @@
       </div>
        <img
         class="coffe-bean"
-        src="img/cropped-bean.png"
+        src="img/cropped-bean.webp"
         alt="A floating coffe bean because i like coffe a lot."
       />
     </header>
