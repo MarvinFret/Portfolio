@@ -8,12 +8,12 @@
     {
       "Title": "Deep",
       "Text": "This is deep. It's a webshop concept that I've designed for bass enthusiast. The goal is to put only a few, high-class and carefully selected basses in the spotlight. The shop is supposed to be less loaded than average instrument retailer webshops to help the user focus on finding what matters to them most: a good bass.",
-      "ProjectImgs": ["../img/deep1.jpg","../img/deep-laptop.jpg"]
+      "ProjectImgs": ["../img/deep1.webp","../img/deep-laptop.jpg"]
     },
     {
       "Title": "Wap",
       "Text": "This is my map-app called Wap. I've designed it to help people find a nice spot in nature. It's like google maps but for hipsters and nature lovers. You can sign up to share your favourite places with your friends and the world.",
-      "ProjectImgs": ["../img/wap1-small.jpg", "../img/wap-cropped.jpg"]
+      "ProjectImgs": ["../img/wap1-small.webp", "../img/wap-cropped.jpg"]
     }
   ]
 }
